@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ALIATTO | Soluções Cotábeis</title>
+  <title>ALIATTO | Soluções Contábeis</title>
   <link rel="shortcut icon" type="image/png" href="assets/images/logos/Group-10-1.png.webp" />
   <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" /><link rel="stylesheet" href="assets/css/aliatto.css" />
 </head>
 
-<body>
+<body data-page="home">
 
   <!-- Header -->
   <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
@@ -27,7 +27,7 @@
         </div>
         <div class="d-flex align-items-center gap-4">
 
-          <div class="btn-group">
+          <nav class="al-nav d-none d-lg-flex" aria-label="Principal"><a href="about-us.html">Quem somos</a><a href="noticias.html">Novidades</a><a href="contact.html">Contato</a><a href="admin.html" class="al-login">Login</a></nav><div class="btn-group">
             <button
               class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
               type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
@@ -40,54 +40,12 @@
                   <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
                 </div>
                 <div class="d-flex flex-column gap-3">
-                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
-                    <li class="header-item">
-                      <a href="index.html" aria-current="true"
-                        class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Inicio</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Sobre Nós</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Projetos</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Blog</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Serviços</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Contato</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Docs</a>
-                    </li>
-                  </ul>
-                  <div class="hstack gap-3">
-                    <a href="sign-in.html"
-                      class="btn btn-outline-light fs-6 bg-white px-3 py-2 text-dark w-50 hstack justify-content-center">Cadastrar</a>
-                    <a href="sign-up.html"
-                      class="btn btn-dark text-white fs-6 bg-dark px-3 py-2 w-50 hstack justify-content-center">Login</a>
-                  </div>
+                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2"><li class="header-item d-lg-none"><a href="index.html" class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Início</a></li><li class="header-item d-lg-none"><a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Quem somos</a></li><li class="header-item d-lg-none"><a href="noticias.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Novidades</a></li><li class="header-item d-lg-none"><a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Contato</a></li><li class="header-item d-lg-none"><a href="admin.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Login</a></li><li class="header-item"><a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Projetos</a></li><li class="header-item"><a href="index.html#services" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Serviços</a></li><li class="header-item"><a href="index.html#planos" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Planos</a></li><li class="header-item"><a href="index.html#faq" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Dúvidas frequentes</a></li><li class="header-item"><a href="terms-and-conditions.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Termos de uso</a></li><li class="header-item"><a href="privacy-policy.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Política de privacidade</a></li></ul>
+                  <a href="https://wa.me/5561993140268" target="_blank" rel="noopener" class="btn btn-dark text-white w-100 hstack justify-content-center">Falar no WhatsApp</a>
                 </div>
                 <div>
-                  <a class="text-dark" href="tel:+1-212-456-7890">(61) 99314-0268</a>
-                  <a class="fs-8 text-dark fw-bold" href="contato@aliattosolucoescontabeis.com.br" target="_blank"><h6>contato@aliattosolucoescontabeis.com.br</h6></a>
+                  <a class="text-dark" href="tel:+5561993140268">(61) 99314-0268</a>
+                  <a class="fs-8 text-dark fw-bold" href="mailto:contato@aliattosolucoescontabeis.com.br" target="_blank"><h6>contato@aliattosolucoescontabeis.com.br</h6></a>
                 </div>
               </div>
             </ul>
@@ -119,7 +77,7 @@
           </div>
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <h1 class="mb-0 fs-16 text-white lh-1">ALIATTO</h1>
-            <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
+            <a href="contact.html" class="p-1 ps-7 bg-primary rounded-pill" aria-label="Fale com a ALIATTO">
               <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
               </span>
@@ -127,7 +85,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section><div class="al-tick" aria-label="Clima e agenda fiscal"><div class="al-mq"><div><span><b>Agenda fiscal</b>DAS (Simples e MEI): dia 20</span><span><b>FGTS</b>recolhimento: dia 20</span><span><b>DCTFWeb</b>último dia útil do mês</span><span><b>13º salário</b>1ª parcela até 30/11</span><span><b>13º salário</b>2ª parcela até 20/12</span><span><b>DASN-SIMEI</b>até 31/05</span><span><b>Agenda fiscal</b>DAS (Simples e MEI): dia 20</span><span><b>FGTS</b>recolhimento: dia 20</span><span><b>DCTFWeb</b>último dia útil do mês</span><span><b>13º salário</b>1ª parcela até 30/11</span><span><b>13º salário</b>2ª parcela até 20/12</span><span><b>DASN-SIMEI</b>até 31/05</span></div></div></div>
 
     <!--  Stats & Facts Section -->
     <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
@@ -141,7 +99,7 @@
               <hr class="border-line">
               <span class="badge text-bg-dark">Estatísticas e fatos</span>
             </div>
-          </div>
+          <div class="al-photo" data-aos="fade-right" data-aos-delay="200"><img src="assets/images/portfolio/contabilidade2.jpeg" alt="Análise contábil"><span class="al-chipf c1">+200 empresas atendidas</span><span class="al-chipf c2">100% online</span></div></div>
           <div class="col-xl-8 col-xxl-7">
             <div class="d-flex flex-column gap-9">
               <div class="row">
@@ -227,7 +185,7 @@
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="assets/images/portfolio/contabilidade3.jpeg" alt="" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="contact.html"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
                     </a>
@@ -247,7 +205,7 @@
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="assets/images/portfolio/contabilidade2.jpeg" alt="" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="contact.html"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
                     </a>
@@ -267,7 +225,7 @@
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="assets/images/portfolio/contabilide5.avif" alt="" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="contact.html"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
                     </a>
@@ -287,7 +245,7 @@
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="assets/images/portfolio/contabilidade2.jpeg" alt="" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="contact.html"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
                     </a>
@@ -307,7 +265,7 @@
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="assets/images/portfolio/contabilidade.jpeg" alt="" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="contact.html"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
                     </a>
@@ -327,7 +285,7 @@
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="assets/images/portfolio/marcos 3.webp" alt="" class="img-fluid">
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="contact.html"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
                     </a>
@@ -382,13 +340,13 @@ Seu Crescimento</p>
                     <img src="assets/images/services/ALIATO6-1.png" alt="services" class="img-fluid">
                   </div>
                   <div class="tab-pane" id="two" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
-                    <img src="assets/images/services/services-img-2.jpg" alt="services" class="img-fluid">
+                    <img src="assets/images/portfolio/contabilidade.jpeg" alt="services" class="img-fluid">
                   </div>
                   <div class="tab-pane" id="three" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
-                    <img src="assets/images/services/services-img-3.jpg" alt="services" class="img-fluid">
+                    <img src="assets/images/portfolio/contabilide5.avif" alt="services" class="img-fluid">
                   </div>
                   <div class="tab-pane" id="four" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
-                    <img src="assets/images/services/services-img-4.jpg" alt="services" class="img-fluid">
+                    <img src="assets/images/backgrounds/privacy-policy-banner.jpg" alt="services" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -462,7 +420,7 @@ Seu Crescimento</p>
                       </div>
                     </li>
                   </ul>
-                  <a href="projects.html" class="btn border border-white border-opacity-25" data-aos="fade-up"
+                  <a href="contact.html" class="btn border border-white border-opacity-25" data-aos="fade-up"
                     data-aos-delay="300" data-aos-duration="1000">
                     <span class="btn-text">Conheça nosso suporte</span>
                     <iconify-icon icon="lucide:arrow-up-right"
@@ -894,7 +852,7 @@ track.addEventListener('touchend', (e) => {
     </section>
     <br><br><br><br>
     <!--  Pricing Section -->
-    <section class="pricing-section py-5 py-lg-11 py-xl-12 bg-light-gray">
+    <section id="planos" class="pricing-section py-5 py-lg-11 py-xl-12 bg-light-gray">
       <div class="container">
         <div class="d-flex flex-column gap-5 gap-xl-10">
           <div class="d-flex flex-column gap-5 gap-xl-11">
@@ -957,7 +915,7 @@ track.addEventListener('touchend', (e) => {
                         </li>
                       </ul>
                     </div>
-                    <a href="" class="btn w-100 justify-content-center">
+                    <a href="https://wa.me/5561993140268" target="_blank" rel="noopener" class="btn w-100 justify-content-center">
                       <span class="btn-text">Assine agora</span>
                       <iconify-icon icon="lucide:arrow-up-right"
                         class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -1006,7 +964,7 @@ track.addEventListener('touchend', (e) => {
                         </li>
                       </ul>
                     </div>
-                    <a href="" class="btn w-100 justify-content-center">
+                    <a href="https://wa.me/5561993140268" target="_blank" rel="noopener" class="btn w-100 justify-content-center">
                       <span class="btn-text">Assine agora</span>
                       <iconify-icon icon="lucide:arrow-up-right"
                         class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -1050,7 +1008,7 @@ track.addEventListener('touchend', (e) => {
                         </li>
                       </ul>
                     </div>
-                    <a href="" class="btn w-100 justify-content-center">
+                    <a href="https://wa.me/5561993140268" target="_blank" rel="noopener" class="btn w-100 justify-content-center">
                       <span class="btn-text">Assine agora</span>
                       <iconify-icon icon="lucide:arrow-up-right"
                         class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -1132,7 +1090,7 @@ track.addEventListener('touchend', (e) => {
     </section>
 
     <!--  FAQ Section -->
-    <section class="faq py-5 py-lg-11 py-xl-12">
+    <section id="faq" class="faq py-5 py-lg-11 py-xl-12">
       <div class="container">
         <div class="d-flex flex-column gap-5 gap-xl-11">
           <div class="row gap-7 gap-xl-0">
@@ -1230,74 +1188,7 @@ track.addEventListener('touchend', (e) => {
     </section>
 
     <!--  Recent news Section -->
-    <section class="Recent-news bg-light-gray py-5 py-lg-11 py-xl-12">
-      <div class="container">
-        <div class="d-flex flex-column gap-5 gap-xl-11">
-          <div class="row gap-7 gap-xl-0">
-            <div class="col-xl-4 col-xxl-4">
-              <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
-                data-aos-duration="1000">
-                <span
-                  class="round-36 flex-shrink-0 text-dark rounded-circle bg-primary hstack justify-content-center fw-medium">09</span>
-                <hr class="border-line bg-white">
-                <span class="badge text-bg-dark">Novo</span>
-              </div>
-            </div>
-            <div class="col-xl-8 col-xxl-7">
-              <div class="row">
-                <div class="col-xxl-8">
-                  <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
-                    <h2 class="mb-0">Novidades</h2>
-                    <p class="fs-5 mb-0 text-opacity-70">Fique por dentro das principais mudanças na legislação tributária, prazos importantes de obrigações fiscais 
-                      e dicas práticas de gestão financeira. Aqui você encontra conteúdo pensado para ajudar empreendedores e empresas a tomar decisões mais seguras e manter tudo em dia com o fisco.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-6 mb-7 mb-xl-0">
-              <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
-                data-aos-duration="1000">
-                <a href="blog-detail.html"
-                  class="resources-img resources-img-first position-relative overflow-hidden d-block">
-                  <img src="assets/images/resources/contabilidade2.jpeg" alt="resources" class="img-fluid">
-                </a>
-                <div class="resources-details">
-                  <p class="mb-0">Dec 24, 2025</p>
-                  <h4 class="mb-0">"Novas regras do Simples Nacional para 2026: o que muda para o seu negócio"</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-              <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="200"
-                data-aos-duration="1000">
-                <a href="blog-detail.html" class="resources-img position-relative overflow-hidden d-block">
-                  <img src="assets/images/resources/marcos 3.webp" alt="resources" class="img-fluid">
-                </a>
-                <div class="resources-details">
-                  <p class="mb-0">Dec 24, 2025</p>
-                  <h4 class="mb-0">5 erros contábeis que podem gerar multa para pequenas empresas</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3 mb-7 mb-xl-0">
-              <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="300"
-                data-aos-duration="1000">
-                <a href="blog-detail.html" class="resources-img position-relative overflow-hidden d-block">
-                  <img src="assets/images/resources/Leo2.webp" alt="resources" class="img-fluid">
-                </a>
-                <div class="resources-details">
-                  <p class="mb-0">Dec 24, 2025</p>
-                  <h4 class="mb-0">ALIATTO amplia atendimento digital para clientes de todo o Brasil</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="Recent-news bg-light-gray py-5 py-lg-11"><div class="al-wrap"><div class="al-head"><h2 class="mb-0 fw-bold" style="color:var(--al-navy)">Novidades e notícias</h2><a href="noticias.html" class="al-btn" style="text-decoration:none">Ver todas as notícias</a></div><div id="home-news"></div></div></section>
 
     <!--  Get in touch Section -->
     <section class="get-in-touch py-5 py-lg-11 py-xl-12">
@@ -1356,50 +1247,11 @@ track.addEventListener('touchend', (e) => {
 
   </div>
 
-  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-5 mb-8 mb-xl-0">
-          <div class="d-flex flex-column gap-8 pe-xl-5">
-            <h2 class="mb-0 text-white">Build something together?</h2>
-            <div class="d-flex flex-column gap-2">
-              <a href="https://www.wrappixel.com/" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
-                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
-              </a>
-              <a href="https://maps.app.goo.gl/hpDp81fqzGt5y4bC8" target="_blank"
-                class="link-hover hstack gap-3 text-white fs-5">
-                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
-          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-            <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
-            <li><a class="link-hover fs-5 text-white" href="about-us.html">About</a></li>
-            <li><a class="link-hover fs-5 text-white" id="services" href="#services">Services</a></li>
-            <li><a class="link-hover fs-5 text-white" href="projects.html">Work</a></li>
-            <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>
-            <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a class="link-hover fs-5 text-white" href="404.html">Error 404</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
-          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-            <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
-            <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
-            <li><a class="link-hover fs-5 text-white" href="#!">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
-          <p class="mb-0 text-white text-opacity-70 text-md-end">© Studiova copyright 2025</p>
-        </div>
-      </div>
-    </div>
-  <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Distributed by <a class="text-white" href="https://www.themewagon.com" target="_blank">ThemeWagon</a></p>
-  </footer>
+  <footer class="al-foot"><div class="al-wrap"><div class="g"><div><img src="assets/images/logos/LOGO_2.png.webp" alt="ALIATTO Soluções Contábeis" width="190"><p class="mt-3" style="opacity:.8;max-width:340px">Contabilidade 100% online para MEI, pequenas e médias empresas. Menos burocracia, mais clareza para decidir.</p></div>
+<div><h5>Páginas</h5><ul><li><a href="index.html">Início</a></li><li><a href="about-us.html">Quem somos</a></li><li><a href="noticias.html">Novidades</a></li><li><a href="contact.html">Contato</a></li></ul></div>
+<div><h5>Institucional</h5><ul><li><a href="terms-and-conditions.html">Termos de uso</a></li><li><a href="privacy-policy.html">Política de privacidade</a></li><li><a href="admin.html">Área restrita</a></li></ul></div>
+<div><h5>Fale conosco</h5><ul><li><a href="https://wa.me/5561993140268" target="_blank" rel="noopener">(61) 99314-0268</a></li><li><a href="mailto:contato@aliattosolucoescontabeis.com.br">contato@aliattosolucoescontabeis.com.br</a></li></ul></div></div>
+<p class="mt-4 mb-0" style="opacity:.6;border-top:1px solid rgba(255,255,255,.15);padding-top:18px">© 2026 ALIATTO Soluções Contábeis. Todos os direitos reservados.</p></div></footer>
 
   <div class="get-template hstack gap-2">
     <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
@@ -1416,6 +1268,6 @@ track.addEventListener('touchend', (e) => {
   <script src="assets/js/custom.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-</body>
+<script src="assets/js/noticias-seed.js"></script><script src="assets/js/config.js"></script><script src="assets/js/db.js"></script><script src="assets/js/aliatto.js"></script></body>
 
 </html>
