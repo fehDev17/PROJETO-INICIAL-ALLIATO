@@ -1,0 +1,25 @@
+/* Menu hambúrguer padrão — igual ao da página inicial (usado em todas as outras páginas) */
+.pm-wrap{position:relative;display:flex;align-items:center}
+.pm-burger{width:46px;height:46px;border-radius:50%;border:0;padding:0;cursor:pointer;background:linear-gradient(145deg,#0f6ccf,#062f6e);color:#fff;display:grid;place-items:center;font-size:22px;box-shadow:0 0 0 5px rgba(23,140,255,.22);transition:transform .25s,box-shadow .25s}
+.pm-burger:hover{transform:scale(1.06);box-shadow:0 0 0 7px rgba(23,140,255,.3)}
+.pm-ic{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pm-ic.f{fill:currentColor;stroke:none}
+.pm-menu[hidden]{display:none}
+.pm-menu{position:fixed;z-index:1200;top:84px;right:clamp(16px,3.6vw,56px);width:min(400px,calc(100vw - 32px));max-height:calc(100vh - 100px);max-height:calc(100dvh - 100px);overflow:auto;background:#fff;color:#071e3d;border-radius:22px;padding:22px;box-shadow:0 30px 70px -20px rgba(2,16,40,.55);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.4;text-align:left;animation:pmIn .25s ease;-webkit-overflow-scrolling:touch}
+.pm-menu *{box-sizing:border-box}
+.pm-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid #dfedf8;margin-bottom:10px}
+.pm-top b{font-size:18px;font-weight:800;color:#071e3d}
+.pm-top button{width:34px;height:34px;border-radius:50%;border:0;padding:0;cursor:pointer;background:#f2faff;color:#071e3d;display:grid;place-items:center;font-size:18px}
+.pm-menu ul{list-style:none;margin:0;padding:0}
+.pm-menu li a{display:flex;align-items:center;padding:10px 6px;font-weight:700;font-size:16px;border-radius:10px;transition:.2s;color:#071e3d;text-decoration:none}
+.pm-menu li a:hover,.pm-menu li a.on{color:#0f6ccf;background:#f2faff;padding-left:12px}
+.pm-menu li a .pm-leaf{flex:none;opacity:0;width:0;margin-right:0;transition:.5s;animation:pmSpin 1s linear infinite}
+.pm-menu li a:hover .pm-leaf,.pm-menu li a.on .pm-leaf{opacity:1;width:20px;margin-right:8px}
+.pm-wa{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;background:#0b2752;color:#fff!important;padding:14px;border-radius:999px;font-weight:700;text-decoration:none}
+.pm-wa .pm-ic{font-size:20px}
+.pm-ct{display:flex;flex-direction:column;gap:4px;margin-top:14px;font-size:14px;font-weight:700;word-break:break-word}
+.pm-ct a{color:#071e3d;text-decoration:none}
+@keyframes pmIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+@keyframes pmSpin{to{rotate:360deg}}
+@media(max-width:575px){.pm-menu{top:72px;padding:18px;border-radius:20px}.pm-burger{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.pm-menu li a .pm-leaf,.pm-menu{animation:none}}

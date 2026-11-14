@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: blob: https:; connect-src 'self' https://*.supabase.co https://api.open-meteo.com https://viacep.com.br https://brasilapi.com.br https://login.microsoftonline.com https://graph.microsoft.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Back-office | ALIATTO</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/Group-10-1.png.webp" />
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/styles.css" /><link rel="stylesheet" href="../assets/css/aliatto.css" /><link rel="stylesheet" href="../assets/css/menu-padrao.css" /><link rel="stylesheet" href="../assets/css/responsivo.css">
+</head>
+
+<body data-page="admin"><header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/LOGO_2.png.webp" alt="logo" style="max-width: 70%; height: auto;">
+          </a>
+          <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/LOGO_2.png.webp" alt="logo" style="max-width: 50%; height: auto;">
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+
+          <nav class="al-nav d-none d-lg-flex" aria-label="Principal"><a href="about-us.html">Quem somos</a><a href="noticias.html">Novidades</a><a href="contact.html">Contato</a><a href="admin.html" class="al-login">Login</a></nav><div class="pm-wrap">
+            <button class="pm-burger" id="pmBurger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="pmMenu">
+              <svg class="pm-ic pm-i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+              <svg class="pm-ic pm-i-x" viewBox="0 0 24 24" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+            <div class="pm-menu" id="pmMenu" hidden>
+              <div class="pm-top"><b>Menu</b><button type="button" id="pmClose" aria-label="Fechar menu"><svg class="pm-ic" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>
+              <ul><li><a href="index.html"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Início</a></li><li><a href="about-us.html"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Quem somos</a></li><li><a href="noticias.html"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Novidades</a></li><li><a href="contact.html"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Contato</a></li><li><a href="admin.html"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Login</a></li><li><a href="projects.html"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Projetos</a></li><li><a href="index.html#servicos"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Serviços</a></li><li><a href="index.html#planos"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Planos</a></li><li><a href="index.html#faq"><img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="pm-leaf">Dúvidas frequentes</a></li></ul>
+              <a href="https://wa.me/5561993140268" target="_blank" rel="noopener" class="pm-wa"><svg class="pm-ic f" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97s-.47-.15-.67.15-.77.97-.94 1.16-.35.22-.64.07c-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52s.2-.3.3-.5.05-.37-.03-.52c-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41s-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.8 11.8 0 0 0-3.48-8.41z"/></svg>Falar no WhatsApp</a>
+              <div class="pm-ct"><a href="tel:+5561993140268">(61) 99314-0268</a><a href="mailto:contato@aliattosolucoescontabeis.com.br">contato@aliattosolucoescontabeis.com.br</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header><main class="al-adm"><div class="al-wrap pb-5"><section id="gate" class="al-panel al-gate"><h2 class="fw-bold" style="color:var(--al-navy)">Área restrita</h2><p>Acesso exclusivo da equipe ALIATTO.</p><form id="login" class="al-form"><label for="us">Informe seu e-mail</label><input id="us" autocomplete="username" placeholder="seu@email.com" required><label for="pw">Digite sua senha</label><input id="pw" type="password" autocomplete="current-password" placeholder="Sua senha" required><p id="err" class="text-danger mt-2 mb-0" role="alert"></p><button class="al-btn mt-3 w-100">Entrar</button></form><div class="al-gsep">ou</div><div id="gbtn" class="d-flex flex-column align-items-center"></div></section>
+<section id="app" hidden><div class="sy"><aside class="sy-nav"><button type="button" class="sy-user" id="prof" title="Editar perfil e foto"><i id="av"></i><div><b id="who2"></b><small>Editar perfil</small></div><iconify-icon icon="lucide:pencil" class="sy-pe"></iconify-icon></button><button type="button" class="sy-bell" id="bell" title="Notificações"><iconify-icon icon="lucide:bell"></iconify-icon><span>Notificações</span><em id="bn"></em></button>
+<p class="sy-g">Principal</p><button data-v="dash" class="on"><iconify-icon icon="lucide:layout-dashboard"></iconify-icon>Dashboard</button><button data-v="tar"><iconify-icon icon="lucide:kanban"></iconify-icon>Minhas tarefas</button><button data-v="agenda"><iconify-icon icon="lucide:calendar-days"></iconify-icon>Agenda fiscal</button>
+<p class="sy-g">Cadastros</p><button data-v="cli"><iconify-icon icon="lucide:building-2"></iconify-icon>Clientes<em id="bc"></em></button><button data-v="cert"><iconify-icon icon="lucide:shield-check"></iconify-icon>Certificados digitais</button><button data-v="rel"><iconify-icon icon="lucide:clipboard-list"></iconify-icon>Relatórios</button><button data-v="docs"><iconify-icon icon="lucide:files"></iconify-icon>Documentos<em id="bd"></em></button>
+<p class="sy-g">Conteúdo</p><button data-v="news"><iconify-icon icon="lucide:newspaper"></iconify-icon>Notícias</button><a class="sy-a" href="index.html" target="_blank"><iconify-icon icon="lucide:external-link"></iconify-icon>Ver o site</a>
+<p class="sy-g">Departamentos</p><button data-v="contabil"><iconify-icon icon="lucide:calculator"></iconify-icon>Contábil</button><button data-v="fiscal"><iconify-icon icon="lucide:percent"></iconify-icon>Fiscal e tributário</button><button data-v="dp"><iconify-icon icon="lucide:users"></iconify-icon>Departamento pessoal</button><button data-v="societario"><iconify-icon icon="lucide:landmark"></iconify-icon>Societário</button>
+<p class="sy-g">Administração</p><button data-v="obrigacoes"><iconify-icon icon="lucide:calendar-check"></iconify-icon>Obrigações e prazos</button><button data-v="atividades"><iconify-icon icon="lucide:list-todo"></iconify-icon>Tarefas e atividades</button><button data-v="financeiro"><iconify-icon icon="lucide:wallet"></iconify-icon>Financeiro</button><button data-v="relger"><iconify-icon icon="lucide:chart-column"></iconify-icon>Relatórios</button>
+<p class="sy-g">Sistema</p><button data-v="usuarios"><iconify-icon icon="lucide:user-cog"></iconify-icon>Usuários e permissões</button><button data-v="suporte"><iconify-icon icon="lucide:life-buoy"></iconify-icon>Suporte TI</button><button data-v="conf"><iconify-icon icon="lucide:settings"></iconify-icon>Configurações</button><button data-v="historico"><iconify-icon icon="lucide:history"></iconify-icon>Histórico de atividades</button><div class="sy-mode" id="mode"></div><button data-v="cfg"><iconify-icon icon="lucide:database"></iconify-icon>Banco de dados</button><button id="out"><iconify-icon icon="lucide:log-out"></iconify-icon>Sair</button></aside>
+<div class="sy-main"><section id="v-dash"></section><section id="v-tar" hidden></section><section id="v-cert" hidden></section><section id="v-cfg" hidden></section><section id="v-agenda" hidden></section><section id="v-cli" hidden></section><section id="v-docs" hidden></section><section id="v-rel" hidden></section><section id="v-contabil" hidden></section><section id="v-fiscal" hidden></section><section id="v-dp" hidden></section><section id="v-societario" hidden></section><section id="v-obrigacoes" hidden></section><section id="v-atividades" hidden></section><section id="v-financeiro" hidden></section><section id="v-relger" hidden></section><section id="v-usuarios" hidden></section><section id="v-suporte" hidden></section><section id="v-conf" hidden></section><section id="v-historico" hidden></section><section id="v-news" hidden><div class="ad-top"><div><small>Painel de notícias</small><h1>Olá, <span id="who"></span></h1><p>Escreva, publique e acompanhe as matérias do portal.</p></div><div class="ad-tools"><a class="al-btn sec" href="noticias.html" target="_blank"><iconify-icon icon="lucide:external-link"></iconify-icon>Ver portal</a><button id="exp" class="al-btn sec"><iconify-icon icon="lucide:download"></iconify-icon>Exportar para o site</button><button id="reset" class="al-btn sec"><iconify-icon icon="lucide:rotate-ccw"></iconify-icon>Descartar alterações</button></div></div>
+<div id="dirty" class="ad-warn" hidden><span><b>O banco de dados ainda não está conectado.</b> Por isso as notícias só aparecem neste navegador. Conecte uma única vez e tudo passa a ser publicado automaticamente, sem exportar arquivos.</span><span class="d-flex gap-2 flex-wrap"><button id="gocfg">Conectar agora</button><button id="exp2" style="background:#fff">Exportar manualmente</button></span></div>
+<div id="lst"><div id="kpi" class="ad-kpi"></div>
+<div class="ad-steps"><div class="ad-st"><em>1</em><div><b>Escreva</b><span>Clique em Nova matéria e preencha título, capa e texto.</span></div></div><div class="ad-st"><em>2</em><div><b>Publique</b><span>Use a chave No ar / Rascunho para decidir o que aparece.</span></div></div><div class="ad-st"><em>3</em><div><b>Exporte</b><span>Baixe o arquivo e troque em assets/js/noticias-seed.js.</span></div></div></div>
+<div class="ad-bar"><input id="q2" type="search" placeholder="Buscar por título" aria-label="Buscar"><div id="tabs" class="ad-tabs"><button class="on" data-f="todas">Todas</button><button data-f="publicada">No ar</button><button data-f="rascunho">Rascunhos</button></div><button id="new" class="al-btn"><iconify-icon icon="lucide:plus"></iconify-icon> Nova matéria</button></div>
+<div id="rows" class="ad-list"></div></div>
+<form id="form" class="al-form" hidden><div class="ad-top"><div><small>Editor</small><h1 id="ftitle">Nova matéria</h1></div></div><div class="ad-form"><div class="al-panel">
+<label for="f-title">Título <span id="c-t" class="ad-cnt"></span></label><input id="f-title" placeholder="Ex.: MEI: o que muda em 2027">
+<label for="f-sub">Subtítulo (linha fina)</label><input id="f-sub" placeholder="Uma frase que resume a matéria">
+<div class="g"><div><label for="f-cat">Categoria</label><select id="f-cat"></select></div><div><label for="f-author">Autor</label><input id="f-author"></div><div><label for="f-date">Data</label><input id="f-date" type="date"></div><div><label for="f-status">Situação</label><select id="f-status"><option value="publicada">No ar</option><option value="rascunho">Rascunho</option></select></div></div>
+<label for="file">Imagem de capa</label><input id="file" type="file" accept="image/*"><input id="f-img" placeholder="ou caminho/URL da imagem (opcional)" class="mt-2">
+<label>Conteúdo</label><div class="tb"><button type="button" data-c="bold">Negrito</button><button type="button" data-c="h2">Título</button><button type="button" data-c="insertUnorderedList">Lista</button><button type="button" data-c="a">Link</button><button type="button" data-c="undo">Desfazer</button></div><div id="ed" contenteditable="true"></div></div>
+<aside class="ad-pv"><h4>Como vai aparecer no portal</h4><a class="al-card" id="pvbox"></a><div class="ad-tip"><b>Dicas:</b> títulos entre 40 e 90 caracteres funcionam melhor. Use "Título" no editor para separar os blocos do texto.</div></aside></div>
+<div class="ad-act"><button class="al-btn"><iconify-icon icon="lucide:save"></iconify-icon> Salvar matéria</button><button type="button" id="cancel" class="al-btn sec">Cancelar</button></div></form></section></div></div></section></div></main><div class="get-template hstack gap-2">
+    <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+      id="scrollToTopBtn">
+      <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+    </button>
+  </div>
+
+
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../assets/libs/aos-master/dist/aos.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<script src="../assets/js/noticias-seed.js"></script><script src="../assets/js/config.js"></script><script src="../assets/js/db.js"></script><script src="../assets/js/menu-padrao.js"></script><script src="../assets/js/seguranca.js"></script><script src="../assets/js/aliatto.js"></script><script src="../assets/js/sistema.js"></script><script src="../assets/js/sistema2.js"></script><script src="../assets/js/sistema3.js"></script><script src="../assets/js/sistema4.js"></script></body>
+
+</html>

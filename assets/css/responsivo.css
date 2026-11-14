@@ -1,0 +1,32 @@
+/* Ajustes de responsividade para celulares e tablets (todas as páginas) */
+html{-webkit-text-size-adjust:100%}
+body{overflow-x:clip}
+img,video,iframe,svg{max-width:100%}
+.al-foot .g>div{min-width:0}
+.al-foot a,.al-foot p{overflow-wrap:anywhere}
+.al-wrap{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+@media(max-width:575px){
+  .ab-visual{padding-top:30px}
+  .ab-visual .al-chipf{max-width:calc(100% - 16px)}
+  .ab-visual .al-chipf.c1{left:8px;bottom:6%}
+  .ab-visual .al-chipf.c2{left:8px;right:auto;top:0}
+  .ab-visual .al-chipf.c3{right:8px;left:auto;bottom:-6px}
+  .al-foot{padding:44px 0 24px}
+}
+@keyframes prFloat{to{transform:translateY(-8px)}}
+@media(max-width:900px){.al-chipf{animation:prFloat 3.5s ease-in-out infinite alternate!important}}
+/* página inicial: evita que colunas de grid estourem a largura da tela */
+.hm-sec :is(div,article,ul,li,p,h2,h3){min-width:0}
+.hm-h2,.hm-lead{overflow-wrap:break-word}
+@media(max-width:575px){.hm-h2{font-size:clamp(28px,8.4vw,40px)}}
+@media(max-width:767px){.ct-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:900px){.ab-visual .al-chipf{width:fit-content;right:auto}.ab-visual .al-chipf.c3{right:8px;left:auto}}
+/* marca d'água do hero: mantém a proporção original (sem esticar/cortar) em telas menores */
+@media(max-width:1199px){
+  .hero-bg .hero-wm{left:3%;width:94%;height:auto;aspect-ratio:1078/198;top:57%;bottom:auto;background-size:100% 100%}
+}
+@media(max-width:575px){
+  .hero-bg .hero-wm{left:2%;width:96%;top:65%}
+}
+/* clima não cobre o menu em telas médias */
+@media(min-width:768px) and (max-width:1199px){.hm-wx{top:78px}}

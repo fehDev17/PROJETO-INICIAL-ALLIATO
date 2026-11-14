@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: blob: https:; connect-src 'self' https://*.supabase.co https://api.open-meteo.com https://viacep.com.br https://brasilapi.com.br https://login.microsoftonline.com https://graph.microsoft.com https://api.iconify.design https://api.simplesvg.com https://api.unisvg.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me"><meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALIATTO | Soluções Contábeis</title>
+  <meta name="description" content="Contabilidade 100% online para MEI, pequenas e médias empresas. Soluções completas, personalizadas e com atendimento especializado.">
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/Group-10-1.png.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap">
+  <link rel="stylesheet" href="assets/css/aliatto.css" />
+  <link rel="stylesheet" href="assets/css/home.css" /><link rel="stylesheet" href="assets/css/responsivo.css">
+</head>
+
+<body data-page="home" class="hm-page">
+
+  <!-- Ícones (sprite SVG) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+      <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+      <symbol id="i-arrow-u" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+      <symbol id="i-chev-d" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></symbol>
+      <symbol id="i-file-d" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="M12 11v7"/><path d="M14.5 12.5c-.4-.7-4-1-4 .9 0 2 4 .9 4 3 0 1.7-3.4 1.6-4.2.4"/></symbol>
+      <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+      <symbol id="i-bars" viewBox="0 0 24 24"><rect x="3" y="12" width="4.5" height="9" rx="1.2"/><rect x="9.8" y="7" width="4.5" height="14" rx="1.2"/><rect x="16.5" y="2" width="4.5" height="19" rx="1.2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8"/><path d="M12 16v5"/><path d="M12 6.5v6"/><path d="M14 8c-.5-.7-3.5-.9-3.5.8 0 1.8 3.5.9 3.5 2.6 0 1.4-2.8 1.3-3.5.4"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8l-6.2 3.3L7 14.2 2 9.3l6.9-1z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+      <symbol id="i-crown" viewBox="0 0 24 24"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7z"/><path d="M5 20h14"/></symbol>
+      <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-mark" viewBox="-20 -20 40 40"><path d="M-1.5 -6.5h9.5v-12.5l-9.5 2.2z" transform="rotate(0)"/><path d="M-1.5 -6.5h9.5v-12.5l-9.5 2.2z" transform="rotate(60)"/><path d="M-1.5 -6.5h9.5v-12.5l-9.5 2.2z" transform="rotate(120)"/><path d="M-1.5 -6.5h9.5v-12.5l-9.5 2.2z" transform="rotate(180)"/><path d="M-1.5 -6.5h9.5v-12.5l-9.5 2.2z" transform="rotate(240)"/><path d="M-1.5 -6.5h9.5v-12.5l-9.5 2.2z" transform="rotate(300)"/></symbol>
+      <symbol id="i-asterisk" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M3.3 7l17.4 10"/><path d="M3.3 17 20.7 7"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 48 40"><path d="M0 40V22C0 9 7 2 20 0l2 6c-7 2-10 6-10 12h10v22zM26 40V22c0-13 7-20 20-22l2 6c-7 2-10 6-10 12h10v22z"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-cloud-sun" viewBox="0 0 24 24"><path d="M12 2v2M4.93 4.93l1.41 1.41M20 12h2M19.07 4.93l-1.41 1.41M15.95 12.65a4 4 0 0 0-5.93-4.13"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6z"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></symbol>
+      <symbol id="i-cloud-rain" viewBox="0 0 24 24"><path d="M4 14.9A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.24"/><path d="M16 14v6M8 14v6M12 16v6"/></symbol>
+      <symbol id="i-cloud-fog" viewBox="0 0 24 24"><path d="M4 14.9A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.24"/><path d="M16 17H7M17 21H9"/></symbol>
+      <symbol id="i-cloud-bolt" viewBox="0 0 24 24"><path d="M6 16.33A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.97"/><path d="m13 12-3 5h4l-3 5"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97s-.47-.15-.67.15-.77.97-.94 1.16-.35.22-.64.07c-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52s.2-.3.3-.5.05-.37-.03-.52c-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41s-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.8 11.8 0 0 0-3.48-8.41z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Cabeçalho -->
+  <header class="hm-head" id="hmHead">
+    <div class="hm-prog" id="hmProg" aria-hidden="true"></div>
+    <div class="hm-head-in">
+      <a href="index.html" class="hm-logo" aria-label="ALIATTO Soluções Contábeis - início">
+        <img src="assets/images/logos/LOGO_2.png.webp" alt="ALIATTO Soluções Contábeis" width="539" height="138">
+      </a>
+      <div class="hm-head-r">
+        <nav class="hm-nav" aria-label="Principal">
+          <a href="html/about-us.html">Quem somos</a>
+          <a href="html/noticias.html">Novidades</a>
+          <a href="html/contact.html">Contato</a>
+          <a href="html/admin.html" class="hm-login">Login</a>
+        </nav>
+        <button class="hm-burger" id="hmBurger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="hmMenu">
+          <svg class="ic"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hm-menu" id="hmMenu" hidden>
+      <div class="hm-menu-top"><b>Menu</b><button type="button" id="hmMenuClose" aria-label="Fechar menu"><svg class="ic"><use href="#i-x"/></svg></button></div>
+      <ul>
+        <li><a href="index.html" class="on"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Início</a></li>
+        <li><a href="html/about-us.html"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Quem somos</a></li>
+        <li><a href="html/noticias.html"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Novidades</a></li>
+        <li><a href="html/contact.html"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Contato</a></li>
+        <li><a href="html/admin.html"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Login</a></li>
+        <li><a href="html/projects.html"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Projetos</a></li>
+        <li><a href="#servicos"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Serviços</a></li>
+        <li><a href="#planos"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Planos</a></li>
+        <li><a href="#faq"><img src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="hm-leaf">Dúvidas frequentes</a></li>
+      </ul>
+      <a href="https://wa.me/5561993140268" target="_blank" rel="noopener" class="hm-menu-wa"><svg class="ic f"><use href="#i-whatsapp"/></svg>Falar no WhatsApp</a>
+      <div class="hm-menu-ct">
+        <a href="tel:+5561993140268">(61) 99314-0268</a>
+        <a href="mailto:contato@aliattosolucoescontabeis.com.br">contato@aliattosolucoescontabeis.com.br</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Clima (alinhado ao cabeçalho) -->
+  <div class="hm-wx" id="hmWx">
+    <button type="button" class="hm-wx-btn" id="hmWxBtn" aria-expanded="false" aria-controls="hmWxPanel">
+      <svg class="ic"><use href="#i-cloud-sun"/></svg><b>--°C</b><span>Brasília, DF</span><svg class="ic chev"><use href="#i-chev-d"/></svg>
+    </button>
+    <div class="hm-wx-panel" id="hmWxPanel" hidden></div>
+  </div>
+
+  <main class="hm">
+
+    <!-- ============ HERO ============ -->
+    <section class="hm-hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"><i class="hero-wm"></i><i class="hb1"></i><i class="hb2"></i><i class="hb3"></i><i class="hb4"></i><i class="hb5"></i><i class="ho ho1"></i><i class="ho ho2"></i><i class="ho ho3"></i><i class="hero-sweep"></i><div class="hero-parts" id="heroParts"></div></div>
+      <div class="hm-c hero-grid">
+        <div class="hero-txt">
+          <p class="hero-kicker rv"><span class="mk"><svg class="ic f mark"><use href="#i-mark"/></svg></span><span>Transforme a Contabilidade do<br><em>Seu Negócio</em> em uma Máquina de Resultados!</span></p>
+          <h1 class="rv" style="--d:.08s"><img src="assets/images/logos/LOGO_2.png.webp" alt="ALIATTO Soluções Contábeis" width="539" height="138"></h1>
+          <p class="hero-lead rv" style="--d:.16s">Mais que contabilidade, somos parceiros do seu crescimento. Soluções completas, personalizadas e 100% online para levar sua empresa mais longe.</p>
+          <a class="hm-btn rv" style="--d:.24s" href="https://wa.me/5561993140268" target="_blank" rel="noopener"><span>Fale com um especialista</span><i class="go"><svg class="ic"><use href="#i-arrow-ur"/></svg></i></a>
+        </div>
+        <div class="hero-vis" aria-hidden="false">
+          <img class="hero-men" src="assets/images/home/socios-hero.webp" alt="Equipe fundadora da ALIATTO" width="1023" height="817">
+          <div class="hero-card rv" style="--d:.3s"><svg class="ic f"><use href="#i-bars"/></svg><div><b>+600</b><span>empresas<br>atendidas</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 01 ESTATÍSTICAS E FATOS ============ -->
+    <section class="hm-sec s-stats" id="estatisticas">
+      <div class="st-bg" aria-hidden="true"></div>
+      <div class="hm-c st-grid">
+        <div class="st-left">
+          <p class="hm-tag rv"><i class="n">01</i><i class="ln"></i><span>Estatísticas e fatos</span></p>
+          <div class="st-photo rv" style="--d:.1s">
+            <div class="ph-frame"><img src="assets/images/portfolio/contabilidade2.jpeg" alt="Análise contábil com calculadora e gráficos" loading="lazy"></div>
+            <div class="chip chip-a"><span class="dot"></span><div><b>100% online</b><small>Mais agilidade<br>para sua empresa</small></div><svg class="ic f"><use href="#i-bars"/></svg></div>
+            <div class="chip chip-b"><svg class="ic"><use href="#i-users"/></svg><b>+200 empresas atendidas</b></div>
+          </div>
+        </div>
+        <div class="st-right">
+          <h2 class="hm-h2 rv">Sempre trazendo novas <em class="uline">inovações.</em></h2>
+          <p class="st-lead rv" style="--d:.06s">Na Aliatto, não apenas cuidamos das suas finanças, nós as transformamos em combustível para o crescimento. Com soluções contábeis 100% online, personalizadas para sua empresa, oferecemos agilidade e clareza, permitindo que você se concentre no que realmente importa: fazer seu negócio prosperar.</p>
+          <div class="st-cards">
+            <article class="st-card rv" style="--d:.1s">
+              <div class="st-top"><i class="ico"><svg class="ic"><use href="#i-users"/></svg></i><div><b><span class="count" data-target="200">200</span>+</b><strong>empresas atendidas</strong></div></div>
+              <p>Confiança de mais de 200 empresas em nossa administração.</p>
+            </article>
+            <article class="st-card rv" style="--d:.18s">
+              <div class="st-top"><i class="ico"><svg class="ic"><use href="#i-file"/></svg></i><div><b><span class="count" data-target="120">120</span>+</b><strong>controles em gestão</strong></div></div>
+              <p>Mais de 120 processos e controles em nossa gestão.</p>
+            </article>
+            <article class="st-card rv" style="--d:.26s">
+              <div class="st-top"><i class="ico"><svg class="ic"><use href="#i-handshake"/></svg></i><div><b><span class="count" data-target="600">600</span>+</b><strong>contratos e parcerias</strong></div></div>
+              <p>Mais de 600 contratos e parcerias que impulsionam o crescimento conjunto.</p>
+            </article>
+          </div>
+          <a class="hm-btn rv" style="--d:.3s" href="html/about-us.html"><span>Conheça nossos profissionais</span><i class="go"><svg class="ic"><use href="#i-arrow-ur"/></svg></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 PORTFÓLIO ============ -->
+    <section class="hm-sec s-port" id="portfolio">
+      <div class="hm-c">
+        <p class="hm-tag rv"><i class="n">02</i><i class="ln"></i><span>Nosso portfólio</span></p>
+        <div class="pt-head">
+          <div class="pt-title">
+            <h2 class="hm-h2 rv">Soluções Contábeis com <em>Transparência e Eficiência</em></h2>
+            <p class="hm-lead rv" style="--d:.06s">Oferecemos um portfólio completo de serviços contábeis, com foco na segurança, conformidade e na geração de informações estratégicas para o crescimento da sua empresa.</p>
+          </div>
+          <ul class="pt-feats rv" style="--d:.1s">
+            <li><svg class="ic"><use href="#i-shield"/></svg><span>Conformidade<br>e segurança</span></li>
+            <li><svg class="ic f"><use href="#i-bars"/></svg><span>Informações<br>confiáveis</span></li>
+            <li><svg class="ic f"><use href="#i-users"/></svg><span>Suporte<br>especializado</span></li>
+          </ul>
+        </div>
+        <div class="pt-grid">
+          <article class="pt-card rv" style="--d:.05s">
+            <div class="pt-img"><img src="assets/images/portfolio/contabilidade2.jpeg" alt="" loading="lazy"><i class="pt-ico"><svg class="ic"><use href="#i-file"/></svg></i></div>
+            <div class="pt-body">
+              <div class="pt-row"><h3>Imposto de Renda</h3><a class="pt-go" href="html/contact.html" aria-label="Falar sobre Imposto de Renda"><svg class="ic"><use href="#i-arrow-r"/></svg></a></div>
+              <p>Declaração e planejamento tributário para pessoas físicas e jurídicas.</p>
+              <div class="pt-tags"><span>Declaração de impostos</span><span>Regularização</span></div>
+            </div>
+          </article>
+          <article class="pt-card rv" style="--d:.12s">
+            <div class="pt-img"><img src="assets/images/portfolio/contabilidade3.jpeg" alt="" loading="lazy"><i class="pt-ico"><svg class="ic"><use href="#i-monitor"/></svg></i></div>
+            <div class="pt-body">
+              <div class="pt-row"><h3>Folha de Pagamento</h3><a class="pt-go" href="html/contact.html" aria-label="Falar sobre Folha de Pagamento"><svg class="ic"><use href="#i-arrow-r"/></svg></a></div>
+              <p>Cálculo, gestão e processamento com precisão e conformidade.</p>
+              <div class="pt-tags"><span>Pagamento de colaboradores</span><span>Gerenciamento de RH</span></div>
+            </div>
+          </article>
+          <article class="pt-card rv" style="--d:.19s">
+            <div class="pt-img"><img src="assets/images/portfolio/contabilide5.avif" alt="" loading="lazy"><i class="pt-ico"><svg class="ic f"><use href="#i-bars"/></svg></i></div>
+            <div class="pt-body">
+              <div class="pt-row"><h3>Consultoria Contábil</h3><a class="pt-go" href="html/contact.html" aria-label="Falar sobre Consultoria Contábil"><svg class="ic"><use href="#i-arrow-r"/></svg></a></div>
+              <p>Orientação estratégica para decisões mais seguras e rentáveis.</p>
+              <div class="pt-tags"><span>Controle e gestão</span><span>Acompanhamento personalizado</span></div>
+            </div>
+          </article>
+          <article class="pt-card rv" style="--d:.26s">
+            <div class="pt-img"><img src="assets/images/portfolio/contabilidade.jpeg" alt="" loading="lazy"><i class="pt-ico"><svg class="ic"><use href="#i-file"/></svg></i></div>
+            <div class="pt-body">
+              <div class="pt-row"><h3>Acompanhamento Mentoria</h3><a class="pt-go" href="html/contact.html" aria-label="Falar sobre Acompanhamento e Mentoria"><svg class="ic"><use href="#i-arrow-r"/></svg></a></div>
+              <p>Suporte contínuo para manter sua empresa sempre em conformidade.</p>
+              <div class="pt-tags"><span>Relatórios periódicos</span><span>Suporte especializado</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 SERVIÇOS ============ -->
+    <section class="hm-sec s-serv" id="servicos">
+      <div class="sv-bg" aria-hidden="true"></div>
+      <div class="hm-c sv-grid">
+        <div class="sv-left">
+          <p class="hm-tag rv"><i class="n">03</i><i class="ln"></i><span>Nossos serviços</span></p>
+          <h2 class="hm-h2 rv" style="--d:.05s">Soluções Contábeis <em>Que Impulsionam</em> o Seu Crescimento</h2>
+          <p class="sv-lead rv" style="--d:.1s">Conte com uma gestão contábil completa, segura e estratégica para sua empresa, com processos otimizados e suporte especializado em todas as etapas.</p>
+          <div class="sv-vis rv" style="--d:.15s">
+            <i class="sv-shape" aria-hidden="true"></i>
+            <img src="assets/images/home/socios-hero.webp" alt="Especialistas da ALIATTO" loading="lazy">
+            <div class="sv-chip"><svg class="ic f"><use href="#i-bars"/></svg><span>Especialistas<br>ao lado do seu negócio</span></div>
+          </div>
+        </div>
+        <div class="sv-right">
+          <article class="sv-row rv" style="--d:.08s">
+            <i class="sv-ico"><svg class="ic"><use href="#i-file-d"/></svg></i>
+            <div><h3>Folha de Pagamento</h3><p>Gestão completa da folha de pagamento para que seus funcionários sejam pagos corretamente e pontualmente, sem complicações.</p></div>
+            <a class="sv-go" href="html/contact.html" aria-label="Saiba mais sobre Folha de Pagamento"><svg class="ic"><use href="#i-arrow-r"/></svg></a>
+          </article>
+          <article class="sv-row rv" style="--d:.16s">
+            <i class="sv-ico"><svg class="ic f"><use href="#i-bars"/></svg></i>
+            <div><h3>IRRF e Tributos</h3><p>Deixe os impostos conosco. Otimização tributária e cumprimento rigoroso das obrigações fiscais para evitar multas e economizar dinheiro.</p></div>
+            <a class="sv-go" href="html/contact.html" aria-label="Saiba mais sobre IRRF e Tributos"><svg class="ic"><use href="#i-arrow-r"/></svg></a>
+          </article>
+          <article class="sv-row rv" style="--d:.24s">
+            <i class="sv-ico"><svg class="ic"><use href="#i-building"/></svg></i>
+            <div><h3>Abertura e<br>Regularização de Empresas</h3><p>Tudo o que você precisa para formalizar ou ajustar seu CNPJ, de forma simples e rápida, com acompanhamento completo do início ao fim.</p></div>
+            <a class="sv-go" href="html/contact.html" aria-label="Saiba mais sobre Abertura e Regularização de Empresas"><svg class="ic"><use href="#i-arrow-r"/></svg></a>
+          </article>
+          <a class="hm-btn rv" style="--d:.3s" href="html/contact.html"><span>Conheça nosso suporte</span><i class="go"><svg class="ic"><use href="#i-arrow-ur"/></svg></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 SOBRE NÓS ============ -->
+    <section class="hm-sec s-about" id="sobre">
+      <div class="hm-c ab-grid">
+        <div class="ab-left">
+          <p class="hm-tag rv"><i class="n">04</i><i class="ln"></i><span>Sobre nós</span></p>
+          <h2 class="hm-h2 rv" style="--d:.05s">Simplificando Finanças, <em>Maximizando Crescimento</em></h2>
+          <p class="hm-lead rv" style="--d:.1s">Com uma equipe de especialistas apaixonados por transformar desafios contábeis em oportunidades, a Aliatto vai além dos números. Nosso objetivo é oferecer um serviço ágil e personalizado que gera impacto real no crescimento do seu negócio.</p>
+          <a class="hm-btn rv" style="--d:.15s" href="html/about-us.html"><span>Conheça nossa história</span><i class="go"><svg class="ic"><use href="#i-arrow-r"/></svg></i></a>
+        </div>
+
+        <div class="ab-quote rv" style="--d:.08s">
+          <svg class="q-bg" aria-hidden="true"><use href="#i-quote"/></svg>
+          <svg class="q-mk" aria-hidden="true"><use href="#i-quote"/></svg>
+          <ul class="stars" aria-label="Avaliação 5 de 5"><li><svg class="ic f"><use href="#i-star"/></svg></li><li><svg class="ic f"><use href="#i-star"/></svg></li><li><svg class="ic f"><use href="#i-star"/></svg></li><li><svg class="ic f"><use href="#i-star"/></svg></li><li><svg class="ic f"><use href="#i-star"/></svg></li></ul>
+          <p>A equipe superou nossas expectativas com uma identidade de marca impressionante.</p>
+          <i class="q-ln"></i>
+          <b class="q-num">98,6%</b>
+          <span class="q-lbl">Satisfação do cliente</span>
+          <div class="q-who"><img src="assets/images/team/Gaby4.jpeg" alt="Gaby" width="56" height="56" loading="lazy"><div><strong>Gaby</strong><small>RH - Recursos Humanos</small></div></div>
+        </div>
+
+        <div class="ab-mid">
+          <div class="ab-photo rv" style="--d:.12s"><img src="assets/images/home/marcos-topo.jpg" alt="Marcos Paulo trabalhando" loading="lazy"></div>
+          <div class="ab-duo">
+            <div class="ab-photo rv" style="--d:.16s"><img src="assets/images/home/dupla-madeira.jpg" alt="Sócios da ALIATTO" loading="lazy"></div>
+            <div class="ab-200 rv" style="--d:.2s"><b>200</b><span>EMPRESAS<br>ATENDIDAS</span><svg class="ic f"><use href="#i-bars"/></svg></div>
+          </div>
+          <div class="ab-proj rv" style="--d:.24s">
+            <svg class="q-bg" aria-hidden="true"><use href="#i-quote"/></svg>
+            <b>200+</b>
+            <p>Projetos bem-sucedidos concluídos</p>
+            <div class="ab-av">
+              <div class="avs">
+                <img src="assets/images/profile/user-1.jpg" alt="" loading="lazy"><img src="assets/images/profile/user-2.jpg" alt="" loading="lazy"><img src="assets/images/profile/user-3.jpg" alt="" loading="lazy"><img src="assets/images/profile/user-4.jpg" alt="" loading="lazy"><img src="assets/images/profile/user-5.jpg" alt="" loading="lazy">
+              </div>
+              <a href="html/projects.html" class="rnd" aria-label="Ver projetos"><svg class="ic"><use href="#i-arrow-r"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ab-400 rv" style="--d:.16s">
+          <i class="ico"><svg class="ic"><use href="#i-users"/></svg></i>
+          <b>400+</b>
+          <span>Empresas atendidas<br>no Brasil</span>
+          <i class="ln"></i>
+          <p>Na Aliatto, cada cliente é uma prioridade. Nossa missão é fornecer soluções que superem expectativas e facilitem o crescimento do seu negócio.</p>
+          <div class="chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 DEPOIMENTOS ============ -->
+    <section class="hm-sec s-depo" id="depoimentos">
+      <div class="hm-c">
+        <p class="hm-tag rv"><i class="n">05</i><i class="ln"></i><span>Depoimentos</span></p>
+        <div class="dp-head">
+          <h2 class="hm-h2 rv">O Que Nossos <em>Clientes Dizem</em></h2>
+          <p class="dp-lead rv" style="--d:.06s">Experiências reais, feedback genuíno — descubra como nossa criatividade e soluções contábeis transformaram marcas e elevaram negócios.</p>
+          <div class="dp-pill rv" style="--d:.1s">
+            <svg class="arrow" viewBox="0 0 80 50" aria-hidden="true"><path d="M4 46C10 22 34 8 70 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m62 4 10 8-11 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div class="avs"><img src="assets/images/profile/user-1.jpg" alt=""><img src="assets/images/profile/user-2.jpg" alt=""><img src="assets/images/profile/user-3.jpg" alt=""><img src="assets/images/profile/user-4.jpg" alt=""><span>+400</span></div>
+            <small>Mais de 400 empresas atendidas<br>em todo o Brasil</small>
+          </div>
+        </div>
+        <div class="dp-wrap">
+          <button class="dp-nav prev" id="dpPrev" type="button" aria-label="Depoimento anterior"><svg class="ic"><use href="#i-arrow-l"/></svg></button>
+          <div class="dp-track" id="dpTrack" aria-live="polite"></div>
+          <button class="dp-nav next" id="dpNext" type="button" aria-label="Próximo depoimento"><svg class="ic"><use href="#i-arrow-r"/></svg></button>
+        </div>
+        <div class="dp-dots" id="dpDots" role="tablist" aria-label="Depoimentos"></div>
+      </div>
+    </section>
+
+    <!-- ============ 06 EQUIPE ============ -->
+    <section class="hm-sec s-team" id="equipe">
+      <div class="hm-c">
+        <p class="hm-tag rv"><i class="n">06</i><i class="ln"></i><span>Nossa equipe</span></p>
+        <div class="tm-head">
+          <h2 class="hm-h2 rv">Equipe <em>ALIATTO</em></h2>
+          <p class="tm-lead rv" style="--d:.06s">Com uma equipe de especialistas apaixonados por transformar desafios contábeis em oportunidades, a Aliatto vai além dos números. Nosso objetivo é oferecer um serviço ágil e personalizado que gera impacto real no crescimento do seu negócio.</p>
+          <div class="tm-pill rv" style="--d:.1s"><i class="ico"><svg class="ic f"><use href="#i-users"/></svg></i><span>Profissionais capacitados e comprometidos com o seu resultado.</span></div>
+        </div>
+        <div class="tm-grid">
+          <article class="tm-card rv" style="--d:.05s">
+            <div class="tm-img leo"><img src="assets/images/team/Leo1.webp" alt="Leonardo Silveira" loading="lazy"></div>
+            <div class="tm-info">
+              <div class="tm-row"><div><h3>Leonardo Silveira</h3><small>Empresário e Dono</small></div><a href="#" class="lk" aria-label="LinkedIn de Leonardo Silveira">in</a></div>
+              <i class="ln"></i>
+              <p>Líder da Aliatto, com foco em estratégia, crescimento e excelência no atendimento.</p>
+            </div>
+          </article>
+          <article class="tm-card rv" style="--d:.12s">
+            <div class="tm-img"><img src="assets/images/home/marcos-topo.jpg" alt="Marcos Paulo" loading="lazy"></div>
+            <div class="tm-info">
+              <div class="tm-row"><div><h3>Marcos Paulo</h3><small>Empresário e Dono</small></div><a href="#" class="lk" aria-label="LinkedIn de Marcos Paulo">in</a></div>
+              <i class="ln"></i>
+              <p>Responsável pela gestão e desenvolvimento de soluções contábeis para nossos clientes.</p>
+            </div>
+          </article>
+          <article class="tm-card rv" style="--d:.19s">
+            <div class="tm-img"><img src="assets/images/team/Leandro5.jpeg" alt="Leandro Silva" loading="lazy"></div>
+            <div class="tm-info">
+              <div class="tm-row"><div><h3>Leandro Silva</h3><small>Analista Contábil</small></div><a href="#" class="lk" aria-label="LinkedIn de Leandro Silva">in</a></div>
+              <i class="ln"></i>
+              <p>Especialista no acompanhamento contábil e na entrega de informações estratégicas para o seu negócio.</p>
+            </div>
+          </article>
+          <article class="tm-card rv" style="--d:.26s">
+            <div class="tm-img"><img src="assets/images/team/Gaby4.jpeg" alt="Gaby" loading="lazy"></div>
+            <div class="tm-info">
+              <div class="tm-row"><div><h3>Gaby</h3><small>RH - Recursos Humanos</small></div><a href="#" class="lk" aria-label="LinkedIn de Gaby">in</a></div>
+              <i class="ln"></i>
+              <p>Cuida do nosso maior patrimônio: pessoas. Atua no desenvolvimento da equipe e no bem-estar do time.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 PLANOS ============ -->
+    <section class="hm-sec s-plans" id="planos">
+      <div class="hm-c">
+        <div class="pl-head">
+          <p class="hm-tag rv"><i class="n">07</i><i class="ln"></i><span>Planos</span></p>
+          <div class="pl-title rv" style="--d:.05s">
+            <h2 class="hm-h2">Preços <em>acessíveis</em></h2>
+            <p>Colaborações bem-sucedidas e experiências digitais transformadoras.</p>
+          </div>
+          <div class="pl-sw rv" style="--d:.1s">
+            <div class="toggle" role="tablist" aria-label="Periodicidade">
+              <button type="button" class="on" data-bill="m" role="tab" aria-selected="true">Mensal</button>
+              <button type="button" data-bill="a" role="tab" aria-selected="false">Anual</button>
+            </div>
+            <div class="save"><svg class="ic"><use href="#i-gift"/></svg><span><b>Economize até 20%</b><br>no plano anual</span></div>
+          </div>
+        </div>
+        <div class="pl-grid">
+          <article class="pl-card rv" style="--d:.05s" data-price="99.90">
+            <div class="pl-top"><i class="ico"><svg class="ic f"><use href="#i-bars"/></svg></i><div><h3>PLANO MEI</h3><small>Ideal para quem está começando.</small></div></div>
+            <small class="pl-from">A partir de</small>
+            <div class="pl-price"><s class="old" hidden></s><b>R$ <span class="val">99,90</span></b><em>/mês</em></div>
+            <p class="pl-desc">Ideal para quem está começando. Simplicidade e eficiência para garantir que sua empresa MEI cresça de forma saudável.</p>
+            <hr>
+            <h4>PRINCIPAIS BENEFÍCIOS:</h4>
+            <ul class="pl-list"><li><i><svg class="ic"><use href="#i-check"/></svg></i>Suporte Contábil Simples e Ágil</li><li><i><svg class="ic"><use href="#i-check"/></svg></i>Acessível e Econômico</li><li><i><svg class="ic"><use href="#i-check"/></svg></i>Orientação Personalizada</li></ul>
+            <a class="hm-btn full" href="https://wa.me/5561993140268" target="_blank" rel="noopener"><span>Assine agora</span><i class="go"><svg class="ic"><use href="#i-arrow-ur"/></svg></i></a>
+          </article>
+
+          <article class="pl-card hot rv" style="--d:.12s" data-price="349.90" data-old="429.90">
+            <span class="pl-badge"><svg class="ic"><use href="#i-crown"/></svg>MAIS ESCOLHIDO</span>
+            <div class="pl-top"><i class="ico"><svg class="ic"><use href="#i-file"/></svg></i><div><h3>PLANO SIMPLES NACIONAL</h3><small>Gestão completa e sem complicações.</small></div></div>
+            <div class="pl-fromrow"><small class="pl-from">A partir de</small><span class="off">18% OFF</span></div>
+            <div class="pl-price"><s class="old">R$429,90</s><b>R$ <span class="val">349,90</span></b><em>/mês</em></div>
+            <p class="pl-desc">Perfeito para empresas que querem se expandir sem complicações. Gestão completa das suas obrigações contábeis e fiscais.</p>
+            <hr>
+            <h4>PRINCIPAIS BENEFÍCIOS:</h4>
+            <ul class="pl-list"><li><i><svg class="ic"><use href="#i-check"/></svg></i>Gestão Completa de Obrigações Fiscais</li><li><i><svg class="ic"><use href="#i-check"/></svg></i>Acompanhamento Financeiro Personalizado</li><li><i><svg class="ic"><use href="#i-check"/></svg></i>Suporte Contínuo</li></ul>
+            <a class="hm-btn full" href="https://wa.me/5561993140268" target="_blank" rel="noopener"><span>Assine agora</span><i class="go"><svg class="ic"><use href="#i-arrow-ur"/></svg></i></a>
+          </article>
+
+          <article class="pl-card rv" style="--d:.19s" data-price="549.90">
+            <div class="pl-top"><i class="ico"><svg class="ic"><use href="#i-building"/></svg></i><div><h3>PLANO LUCRO PRESUMIDO</h3><small>Soluções robustas para grandes empresas.</small></div></div>
+            <small class="pl-from">A partir de</small>
+            <div class="pl-price"><s class="old" hidden></s><b>R$ <span class="val">549,90</span></b><em>/mês</em></div>
+            <p class="pl-desc">Soluções robustas para empresas maiores, com foco em maximizar lucros e minimizar riscos fiscais. A segurança que você precisa, com a eficiência que você merece.</p>
+            <hr>
+            <h4>PRINCIPAIS BENEFÍCIOS:</h4>
+            <ul class="pl-list"><li><i><svg class="ic"><use href="#i-check"/></svg></i>Otimização Fiscal Inteligente</li><li><i><svg class="ic"><use href="#i-check"/></svg></i>Consultoria Estratégica Avançada</li><li><i><svg class="ic"><use href="#i-check"/></svg></i>Relatórios Precisos e Atualizados</li></ul>
+            <a class="hm-btn full" href="https://wa.me/5561993140268" target="_blank" rel="noopener"><span>Assine agora</span><i class="go"><svg class="ic"><use href="#i-arrow-ur"/></svg></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 FAQ ============ -->
+    <section class="hm-sec s-faq" id="faq">
+      <div class="hm-c fq-grid">
+        <div class="fq-vis rv">
+          <i class="fq-shape a" aria-hidden="true"></i><i class="fq-shape b" aria-hidden="true"></i>
+          <img class="fq-img" src="assets/images/home/socios-hero.webp" alt="Equipe ALIATTO pronta para tirar suas dúvidas" loading="lazy">
+          <i class="fq-bub q" aria-hidden="true"><svg class="ic"><use href="#i-help"/></svg></i>
+          <i class="fq-bub d" aria-hidden="true"><svg class="ic"><use href="#i-chat"/></svg></i>
+          <div class="fq-card">
+            <div class="fq-card-t"><i class="ico"><svg class="ic"><use href="#i-headset"/></svg></i><div><b>Não encontrou o que procura?</b><span>Fale com nossa equipe e receba um atendimento personalizado.</span></div></div>
+            <a class="hm-btn full" href="https://wa.me/5561993140268" target="_blank" rel="noopener"><span>Falar com um especialista</span><i class="go"><svg class="ic"><use href="#i-arrow-r"/></svg></i></a>
+          </div>
+        </div>
+        <div class="fq-right">
+          <p class="hm-tag rv"><i class="n">08</i><i class="ln"></i><span>FAQ</span></p>
+          <h2 class="hm-h2 rv" style="--d:.05s">Perguntas <em>frequentes</em></h2>
+          <p class="hm-lead rv" style="--d:.1s">Tire suas principais dúvidas sobre contabilidade, prazos, valores e como funciona nosso atendimento.</p>
+          <div class="fq-list" id="fqList">
+            <div class="fq-item open">
+              <button type="button" class="fq-q" aria-expanded="true" aria-controls="fq1" id="fqb1"><i class="ico"><svg class="ic"><use href="#i-file"/></svg></i><span>Quais serviços a ALIATTO oferece?</span><i class="tg"><svg class="ic"><use href="#i-minus"/></svg></i></button>
+              <div class="fq-a" id="fq1" role="region" aria-labelledby="fqb1"><p>Oferecemos uma gestão contábil completa, incluindo abertura, alteração e encerramento de empresas, folha de pagamento, apuração de impostos, consultoria tributária, planejamento financeiro e muito mais.</p></div>
+            </div>
+            <div class="fq-item">
+              <button type="button" class="fq-q" aria-expanded="false" aria-controls="fq2" id="fqb2"><i class="ico"><svg class="ic"><use href="#i-users"/></svg></i><span>Vocês atendem MEI, microempresas e empresas de médio porte?</span><i class="tg"><svg class="ic"><use href="#i-plus"/></svg></i></button>
+              <div class="fq-a" id="fq2" role="region" aria-labelledby="fqb2"><p>Sim! Atendemos empresas de diversos portes e regimes tributários, desde o MEI até empresas de médio porte, sempre com soluções adequadas à realidade de cada cliente.</p></div>
+            </div>
+            <div class="fq-item">
+              <button type="button" class="fq-q" aria-expanded="false" aria-controls="fq3" id="fqb3"><i class="ico"><svg class="ic"><use href="#i-building"/></svg></i><span>Fazem abertura, alteração e encerramento de empresas?</span><i class="tg"><svg class="ic"><use href="#i-plus"/></svg></i></button>
+              <div class="fq-a" id="fq3" role="region" aria-labelledby="fqb3"><p>Sim, cuidamos de todo o processo: abertura de CNPJ, alterações contratuais (mudança de endereço, sócios, atividade) e também encerramento de empresas, com toda a documentação necessária.</p></div>
+            </div>
+            <div class="fq-item">
+              <button type="button" class="fq-q" aria-expanded="false" aria-controls="fq4" id="fqb4"><i class="ico"><svg class="ic"><use href="#i-monitor"/></svg></i><span>Como funciona o atendimento? É presencial, online ou híbrido?</span><i class="tg"><svg class="ic"><use href="#i-plus"/></svg></i></button>
+              <div class="fq-a" id="fq4" role="region" aria-labelledby="fqb4"><p>Nosso atendimento é híbrido: você pode nos procurar presencialmente ou resolver tudo online, pelo WhatsApp, e-mail ou videochamada, com a mesma agilidade e atenção.</p></div>
+            </div>
+            <div class="fq-item">
+              <button type="button" class="fq-q" aria-expanded="false" aria-controls="fq5" id="fqb5"><i class="ico"><svg class="ic"><use href="#i-user"/></svg></i><span>Já tenho contador, como faço para migrar para a ALIATTO?</span><i class="tg"><svg class="ic"><use href="#i-plus"/></svg></i></button>
+              <div class="fq-a" id="fq5" role="region" aria-labelledby="fqb5"><p>É simples! Basta entrar em contato com nossa equipe — nós cuidamos de toda a transição, incluindo a solicitação dos documentos e informações junto ao contador anterior, sem burocracia para você.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 09 NOVIDADES ============ -->
+    <section class="hm-sec s-news" id="novidades">
+      <div class="hm-c">
+        <p class="hm-tag rv"><i class="n">09</i><i class="ln"></i><span>Conteúdo</span></p>
+        <div class="nw-head">
+          <div>
+            <h2 class="hm-h2 rv">Novidades e <em>notícias</em></h2>
+            <p class="hm-lead rv" style="--d:.06s">Conteúdos atualizados para você se manter informado sobre o universo contábil, fiscal e empresarial.</p>
+          </div>
+          <a class="hm-btn rv" style="--d:.1s" href="html/noticias.html"><span>Ver todas as notícias</span><i class="go"><svg class="ic"><use href="#i-arrow-r"/></svg></i></a>
+        </div>
+        <div class="nw-grid" id="hmNews"></div>
+        <!-- usado pelo aliatto.js da versão anterior; mantido oculto para não gerar erro -->
+        <div id="home-news" hidden></div>
+      </div>
+    </section>
+
+    <!-- ============ 10 CONTATO ============ -->
+    <section class="hm-sec s-contact" id="contato">
+      <div class="hm-c ct-grid">
+        <div class="ct-left">
+          <p class="hm-tag rv"><i class="n">10</i><i class="ln"></i><span>Contato</span></p>
+          <h2 class="hm-h2 rv" style="--d:.05s">Entre em <em>contato</em></h2>
+          <p class="hm-lead rv" style="--d:.1s">Sua empresa merece uma contabilidade que resolve, não que complica.<br>Vamos conversar?</p>
+          <ul class="ct-feats rv" style="--d:.14s">
+            <li><i class="ico"><svg class="ic"><use href="#i-chat"/></svg></i><div><b>Atendimento rápido</b><span>Retorno em até 1h útil</span></div></li>
+            <li><i class="ico"><svg class="ic"><use href="#i-users"/></svg></i><div><b>Suporte especializado</b><span>Fale diretamente com nossos especialistas</span></div></li>
+            <li><i class="ico"><svg class="ic"><use href="#i-shield"/></svg></i><div><b>Seus dados protegidos</b><span>Ambiente 100% seguro</span></div></li>
+          </ul>
+          <a class="ct-wa rv" style="--d:.18s" href="https://wa.me/5561993140268" target="_blank" rel="noopener">
+            <i class="wa"><svg class="ic f"><use href="#i-whatsapp"/></svg></i>
+            <div><b>Prefere um atendimento imediato?</b><span>Fale com a nossa equipe no WhatsApp.</span></div>
+            <i class="rnd"><svg class="ic"><use href="#i-arrow-r"/></svg></i>
+          </a>
+        </div>
+
+        <div class="ct-mid rv" style="--d:.1s">
+          <i class="ct-shape a" aria-hidden="true"></i><i class="ct-shape b" aria-hidden="true"></i>
+          <img class="ct-img" src="assets/images/team/Leo1.webp" alt="Atendimento ALIATTO" loading="lazy">
+          <div class="ct-ready">
+            <i class="ico"><svg class="ic"><use href="#i-chat"/></svg></i>
+            <b>Estamos prontos<br>para te ajudar!</b>
+            <p>Conte com uma equipe especializada para entender as necessidades da sua empresa e oferecer a melhor solução.</p>
+          </div>
+        </div>
+
+        <form class="ct-form rv" style="--d:.14s" id="hmForm" novalidate>
+          <h3>Envie sua mensagem</h3>
+          <p>Preencha os dados abaixo e nossa equipe entrará em contato em breve para entender sua necessidade.</p>
+          <label class="fld"><svg class="ic"><use href="#i-user"/></svg><input id="f-nome" type="text" placeholder="Nome completo" autocomplete="name" required><i class="req">*</i></label>
+          <label class="fld"><svg class="ic"><use href="#i-mail"/></svg><input id="f-mail" type="email" placeholder="E-mail" autocomplete="email" required><i class="req">*</i></label>
+          <label class="fld"><svg class="ic"><use href="#i-building"/></svg><input id="f-emp" type="text" placeholder="Nome da empresa" autocomplete="organization"></label>
+          <label class="fld area"><svg class="ic"><use href="#i-chat"/></svg><textarea id="f-msg" placeholder="Fale sobre sua empresa" maxlength="500" rows="4" required></textarea><i class="req">*</i><span class="cnt" id="f-cnt">0/500</span></label>
+          <p class="f-err" id="f-err" role="alert" hidden></p>
+          <button type="submit" class="hm-btn full send"><span>ENVIAR MENSAGEM</span><i class="go"><svg class="ic"><use href="#i-arrow-ur"/></svg></i></button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="al-foot"><div class="al-wrap"><div class="g"><div><img src="assets/images/logos/LOGO_2.png.webp" alt="ALIATTO Soluções Contábeis" width="190"><p class="mt-3" style="opacity:.8;max-width:340px">Contabilidade 100% online para MEI, pequenas e médias empresas. Menos burocracia, mais clareza para decidir.</p></div>
+<div><h5>Páginas</h5><ul><li><a href="index.html">Início</a></li><li><a href="html/about-us.html">Quem somos</a></li><li><a href="html/noticias.html">Novidades</a></li><li><a href="html/contact.html">Contato</a></li></ul></div>
+<div><h5>Institucional</h5><ul><li><a href="html/terms-and-conditions.html">Termos de uso</a></li><li><a href="html/privacy-policy.html">Política de privacidade</a></li><li><a href="html/admin.html">Área restrita</a></li></ul></div>
+<div><h5>Fale conosco</h5><ul><li><a href="https://wa.me/5561993140268" target="_blank" rel="noopener">(61) 99314-0268</a></li><li><a href="mailto:contato@aliattosolucoescontabeis.com.br">contato@aliattosolucoescontabeis.com.br</a></li></ul></div></div>
+<p class="mt-4 mb-0" style="opacity:.6;border-top:1px solid rgba(255,255,255,.15);padding-top:18px">© 2026 ALIATTO Soluções Contábeis. Todos os direitos reservados.</p><p class="al-dev" style="margin:8px 0 0;text-align:left;font-size:14px;opacity:.85">Desenvolvido | Fernando DEV</p></div></footer>
+
+  <button type="button" class="hm-up" id="hmUp" aria-label="Voltar ao topo"><svg class="ic"><use href="#i-arrow-u"/></svg></button>
+
+  <script src="assets/js/noticias-seed.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/db.js"></script>
+  <script src="assets/js/seguranca.js"></script><script src="assets/js/aliatto.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+
+</html>
